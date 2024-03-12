@@ -9,7 +9,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className>
+        <div>
             <head className='text-white
             flex justify-evenly font-bold items-center h-24 max-w-[1242px] mx-auto
             '>
@@ -21,12 +21,13 @@ const Navbar = () => {
                 </ul>
 
                 {/* useState to close the menu*/}
-                <div onClick={handleNav} className='transform rotate-180 text-sky-300' >
+                <div onClick={handleNav} className='transform rotate-180 transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-220 hover:bg-sky-500 duration-300 p-2
+                    rounded-lg' >
                     {!nav ? <AiOutlineClose size={24}/> : <AiOutlineMenuFold size={24} />}
                 </div>
 
-                <div className={!nav ? 'fixed text-white text-left h-full border-r border-zinc-600 top-0 left-0' : 'fixed hidden'}>
-                    <ul className='pt-20 pl-0.1' >
+                <div className={!nav ? 'fixed text-white text-left h-full border-r border-zinc-600 top-20 left-0 ease-in-out duration-300' : 'ease-in-out duration-300 fixed h-32 hidden'}>
+                    <ul className='pt-1 pl-0.1' >
                         <li className='p-4 border-b border-zinc-600'>Catalog</li>
                         <li className='p-4 border-b border-zinc-600'>Scheduling</li>
                         <li className='p-4 border-b border-zinc-600'>About</li>
@@ -38,9 +39,9 @@ const Navbar = () => {
                 </div>
 
                 <div>
-                    <button className='flex g-1 items-center ml-2 bg-zinc-100 text-sky-300
-                        hover:bg-sky-400 pr-2 pl-2 rounded-lg p-1 
-                        '
+                    <button className='transition ease-in-out delay-15 bg-sky-400 hover:-translate-y-1 hover:scale-220 hover:bg-sky-500 duration-300 p-2
+                    rounded-lg
+                    '
                     >
                         <AiFillContacts size={30}/>
                     </button>
