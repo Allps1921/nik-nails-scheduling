@@ -13,7 +13,7 @@ const Navbar = () => {
             <head className='text-white
             flex justify-evenly font-bold items-center h-24 max-w-[1242px] mx-auto
             '>
-                <ul className='flex hidden justify-around'>
+                <ul className='hidden justify-around'>
                     <li className='p-4'>Catalog</li>
                     <li className='p-4'>Scheduling</li>
                     <li className='p-4'>About</li>
