@@ -43,7 +43,7 @@ const Navbar = () => {
                     rounded-lg
                     '
                     >
-                        <AiFillContacts size={30}/>
+                        <AiFillContacts size={24}/>
                     </button>
                 </div> 
             </head>
